@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,23 @@ namespace KinoProject
                 input = IntInput(Console.ReadLine());
             }
             return input;
+        }
+
+        public static void Menu(ref int choose,ref int numofDraws,ref int betAmount)
+        {            
+            Console.WriteLine("Please choose your bet:");
+            Console.WriteLine("[1]-Odd\n[2]-Even\n[3]-Draw");
+            choose = Helper.IntInput(Console.ReadLine());
+            while (choose != 1 && choose != 2 && choose != 3)
+            {
+                Console.WriteLine("Please type 1 for Odd, 2 for Even, 3 for Draw! :");
+                choose = Helper.IntInput(Console.ReadLine());
+            }
+            Console.WriteLine("Please enter number of draws: ");
+            numofDraws = Helper.InputInRange(Kino.chooseDraws, Helper.IntInput(Console.ReadLine()));
+            Console.WriteLine("Please enter your bet amount!: ");
+            betAmount = Helper.InputInRange(Kino.choosebet, Helper.IntInput(Console.ReadLine()));
+            Console.WriteLine($"Your total bet amount is: {betAmount * numofDraws} for {numofDraws} draws !");
         }
 
     }

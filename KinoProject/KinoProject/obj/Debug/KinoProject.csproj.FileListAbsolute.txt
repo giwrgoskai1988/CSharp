@@ -5,3 +5,10 @@ C:\Users\Α\source\repos\KinoProject\KinoProject\obj\Debug\KinoProject.csprojAss
 C:\Users\Α\source\repos\KinoProject\KinoProject\obj\Debug\KinoProject.csproj.CoreCompileInputs.cache
 C:\Users\Α\source\repos\KinoProject\KinoProject\obj\Debug\KinoProject.exe
 C:\Users\Α\source\repos\KinoProject\KinoProject\obj\Debug\KinoProject.pdb
+C:\Users\Toumpano\source\repos\MyGit\CSharp\KinoProject\KinoProject\bin\Debug\KinoProject.exe.config
+C:\Users\Toumpano\source\repos\MyGit\CSharp\KinoProject\KinoProject\bin\Debug\KinoProject.exe
+C:\Users\Toumpano\source\repos\MyGit\CSharp\KinoProject\KinoProject\bin\Debug\KinoProject.pdb
+C:\Users\Toumpano\source\repos\MyGit\CSharp\KinoProject\KinoProject\obj\Debug\KinoProject.csprojAssemblyReference.cache
+C:\Users\Toumpano\source\repos\MyGit\CSharp\KinoProject\KinoProject\obj\Debug\KinoProject.csproj.CoreCompileInputs.cache
+C:\Users\Toumpano\source\repos\MyGit\CSharp\KinoProject\KinoProject\obj\Debug\KinoProject.exe
+C:\Users\Toumpano\source\repos\MyGit\CSharp\KinoProject\KinoProject\obj\Debug\KinoProject.pdb

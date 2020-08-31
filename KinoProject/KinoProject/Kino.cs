@@ -21,13 +21,13 @@ namespace KinoProject
 
         public List<int> results = new List<int>();
         private int even = 0;
-        Random rnd = new Random();
+        private static Random rnd = new Random();
 
-        public Kino(int betChoice, int mBet, int numDraws)
-        {
-            choice = betChoice;
-            moneyBet = mBet;
-            numberofDraws = numDraws;
+        public Kino(int choose, int numofDraws , int betAmount)
+        {            
+            choice = choose;
+            numberofDraws = numofDraws;
+            moneyBet = betAmount;            
         }
 
         public void CalcEarning()
@@ -53,27 +53,20 @@ namespace KinoProject
         }
 
         public void RunDraw()
-        {   
+        {
             results.Clear();
-            for(int i = 0; i < 20; i++)
+            for (int i = 0; i < 20; i++)
             {
                 results.Add(rnd.Next(1, 81));
-                even = results[i] % 2 == 0 ? even + 1 : even;               
+                even = results[i] % 2 == 0 ? even + 1 : even;
             }
         }
 
         public void ShowDrawNumbers()
         {
             Console.WriteLine($"\nWinning numbers for this draw are :\n ");
-            try
-            {
-                for (int i = 0; i < 20; i++)
-                    Console.Write($"{results[i]} | ");
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("No numbers to show! Please run a draw first");
-            }
+            for (int i = 0; i < 20; i++)
+                Console.Write($"|{results[i]}| ");
         }
     }
 }
