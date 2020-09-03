@@ -16,18 +16,13 @@ namespace KinoProject
             Helper.Menu(ref choose,ref numofDraws,ref betAmount);
             
             IKino a = new Kino(choose, numofDraws, betAmount);
+           
+                a.RunDraw();
+                a.ShowDrawNumbers();
+                a.CalcEarning();
+            
+            
 
-            a.ShowDrawNumbers();
-            a.CalcEarning();
-
-            //for (int i = 1; i <= a.numberofDraws; i++)
-            //{
-            //    a.RunDraw();
-            //    a.ShowDrawNumbers();
-            //    a.CalcEarning();
-            //}          
-
-            Console.WriteLine($"Total Earnings = {a.totalEarning}!\n");
 
         }       
     }
