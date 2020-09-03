@@ -9,6 +9,12 @@ namespace KinoProject
 {
     static class Helper
     {
+        public enum Choose { Odd = 1, Even, Draw }
+        public static readonly List<int> choosebet = new List<int> { 1, 2, 3, 5, 10, 15, 20, 30, 50, 100 };
+        public static readonly List<int> chooseDraws = new List<int> { 1, 2, 3, 4, 5, 6, 10, 20, 50, 100, 200 };
+        public static Random rnd = new Random();
+        public static List<int> results = new List<int>();
+
         public static int IntInput(string str)
         { 
             int input;
@@ -45,9 +51,9 @@ namespace KinoProject
                 choose = Helper.IntInput(Console.ReadLine());
             }
             Console.WriteLine("Please enter number of draws: ");
-            numofDraws = Helper.InputInRange(Kino.chooseDraws, Helper.IntInput(Console.ReadLine()));
+            numofDraws = Helper.InputInRange(Helper.chooseDraws, Helper.IntInput(Console.ReadLine()));
             Console.WriteLine("Please enter your bet amount!: ");
-            betAmount = Helper.InputInRange(Kino.choosebet, Helper.IntInput(Console.ReadLine()));
+            betAmount = Helper.InputInRange(Helper.choosebet, Helper.IntInput(Console.ReadLine()));
             Console.WriteLine($"Your total bet amount is: {betAmount * numofDraws} for {numofDraws} draws !");
         }
 
